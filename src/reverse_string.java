@@ -7,7 +7,10 @@ public class reverse_string {
     }
 
     private static String reverse_mode(String userString) {
-        String result = " ";
-
+        String result = "";
+        for (int i = userString.length() - 1; i >= 0; i--) {
+            result = result + userString.charAt(i);
+        }
+        return result;
     }
 }

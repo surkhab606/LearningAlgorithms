@@ -1,19 +1,18 @@
 public class max_element {
 
     public static void main(String[] args) {
-        int[] array = {1,2,3,4,5,100};
-        int max = max_array(array);
-        System.out.println("The maximum element is: " + max);
+        int[] array = {1, 2, 3, 100, 1000};
+        int max = maximum_element(array);
+        System.out.println("The max element in the array is: " + max);
     }
 
-    private static int max_array(int[] array) {
-        int max_value = 0;
+    private static int maximum_element(int[] array) {
+        int maximum = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > max_value) {
-                max_value = array[i];
+            if (array[i] > maximum) {
+                array[i] = maximum;
             }
         }
-        return max_value;
-
+        return maximum;
     }
 }

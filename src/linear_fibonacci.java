@@ -1,17 +1,16 @@
 public class linear_fibonacci {
-
     public static void main(String[] args) {
-        int k = 10;
-        int fibo = linear_fibo(k);
-        System.out.println("The number is: " + fibo);
+        int target = 20;
+        int hawkTuah = result(target);
+        System.out.println("The 20th number in the sequence is: " + hawkTuah);
     }
 
-    private static int linear_fibo(int number) {
+    private static int result(int number) {
         if (number == 0) {
             return 0;
         }
 
-        else if(number == 1) {
+        else if (number == 1) {
             return 1;
         }
 
@@ -25,6 +24,5 @@ public class linear_fibonacci {
         }
 
         return b;
-
     }
 }

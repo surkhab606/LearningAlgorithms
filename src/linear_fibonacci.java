@@ -14,5 +14,17 @@ public class linear_fibonacci {
         if (number == 1) {
             return 1;
         }
+
+        int a = 0;
+        int b = 1;
+
+        for(int i = 2; i < number; i++) {
+            int next = a + b;
+            a = b;
+            b = next;
+
+            return next;
+        }
+
     }
 }

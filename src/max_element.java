@@ -7,12 +7,12 @@ public class max_element {
     }
 
     private static int maximum_element(int[] array) {
-        int maximum = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > maximum) {
-                maximum = array[i];
+        int max = 0;
+        for(int i = 0; i < array.length; i++) {
+            if(array[i] > max) {
+                max = array[i];
             }
         }
-        return maximum;
+        return max;
     }
 }

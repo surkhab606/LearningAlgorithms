@@ -8,7 +8,7 @@ public class sum_array {
 
     private static int total_sum(int[] array) {
         int total = 0;
-        for (int i = 0; i < array.length; i++) {
+        for(int i = 0; i < array.length; i++) {
             total += array[i];
         }
         return total;

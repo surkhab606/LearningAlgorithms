@@ -7,6 +7,23 @@ public class linear_fibonacci {
     }
 
     public static int linear(int number) {
+        if (number == 1) {
+            return 1;
+        }
 
+        if (number == 0) {
+            return 0;
+        }
+
+        int a = 0;
+        int b = 1;
+
+        for(int i = 2; i <= number; i++) {
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+
+        return b;
     }
 }

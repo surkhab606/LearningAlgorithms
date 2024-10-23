@@ -8,5 +8,6 @@ public class reverse_string {
 
     private static String reverse_mode(String userString) {
         String result = "";
+
     }
 }

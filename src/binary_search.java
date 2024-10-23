@@ -8,5 +8,15 @@ public class binary_search {
     }
 
     private static int binary_target(int[] array, int target) {
+        int low = 0;
+        int high = array.length -1;
 
+        while(low <= high) {
+            int mid = (low + high) / 2;
+            if (target == mid) {
+                return mid;
+            }
+
+            else if (array[mid] )
+        }
 }

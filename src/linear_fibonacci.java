@@ -17,5 +17,7 @@ public class linear_fibonacci {
 
         int a = 0;
         int b = 1;
+
+        for(int i = 2; )
     }
 }

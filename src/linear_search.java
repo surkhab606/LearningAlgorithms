@@ -1,20 +1,17 @@
-import java.util.Scanner;
 public class linear_search {
-
     public static void main(String[] args) {
-        int[] array = {1,2,3,4,5,6,7,8};
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter a number: ");
-        int k = scanner.nextInt();
-        int execute = target_hunt(array, k);
-        System.out.println("The target is: " + execute);
+        int target = 6;
+        int[] arr = {1, 2, 3, 4, 5, 6};
+        int result = linear(arr, target);
+        System.out.println(result);
     }
 
-    private static int target_hunt(int[] array, int target) {
-        for(int i = 0; i < array.length; i++) {
-            if(array[i] == target) {
-                return array[i];
+    public static int linear(int[] array, int number) {
+        for (int x = 0; x < array.length; x++) {
+            if (number == array[x]) {
+                return number;
             }
+
         }
         return -1;
     }
